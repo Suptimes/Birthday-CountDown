@@ -71,7 +71,7 @@ p{
     font-size: .7em;
     text-align: center;
     font-style: normal;
-    margin-top: 3em;
+    margin-top: 2em;
     padding-bottom: 5px;
 }
 
@@ -262,7 +262,9 @@ p{
         /* height: 100vh; */
     }
     h1{
-        font-size: 35px;
+        margin-top: -0.7em;
+        /* margin-bottom: -0.3em; */
+        font-size: 32px;
     }
     .time{
         margin: 10px;
@@ -274,7 +276,7 @@ p{
         font-size: 10px;
     }
     #daily-msg{
-        
+
         /* padding-bottom: 1.5em; */
     }
 }
