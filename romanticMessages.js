@@ -1,18 +1,19 @@
 const romanticMessages = [
-    "Your hair is the first hook you got me with.",
-    "Randa my Queen, you light up my life like no other.",
+    "Perfect Hair, that's you",
     "You gracefully balance work and family, it's unbelievable.",
-    "Noah and Isaac are lucky to have a mom like you.",
-    "In your eyes, I see strength, love, and care.",
+    "Perfect body, mind, personality and ass",
+    "Can't find words to describe you",
+    "Queen, you light up my life like no other.",
     "You're a superwoman, beyond compare.",
     "You are the sunshine that brightens up my day.",
     "Being with you makes every moment special.",
     "Your smile melts my heart every time I see it.",
     "I am grateful to have you by my side.",
+    "In your eyes, I see strength, love, and care.",
     "You are the most beautiful person inside and out.",
     "I fall in love with you more every day.",
-    "Your love completes me.",
-    "You are my everything.",
+    "Noah and Isaac are lucky to have a mom like you.",
+    "Your love completes me, You are my everything",
     "Randa, my love for you grows each passing day.",
     "You're the anchor that keeps our family at bay.",
     "In your embrace, I find solace and peace.",
@@ -34,7 +35,6 @@ const romanticMessages = [
     "I am deeply and madly in love with you.",
     "You are the missing piece of my puzzle.",
     "I love you more than words can express.",
-    "You are the queen of my heart.",
     "You are the first and last thought on my mind every day.",
     "You are the love of my life, and I am grateful for you.",
     "You make me believe in love again and again.",
@@ -206,3 +206,4 @@ const romanticMessages = [
 
 export default romanticMessages;
   
+console.log(romanticMessages.length)
