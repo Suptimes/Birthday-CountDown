@@ -72,6 +72,8 @@ p{
     font-style: normal;
     padding-bottom: 5px;
 }
+
+
 /* ------ Envelope -------  */
 
 #envelope {
@@ -268,6 +270,9 @@ p{
     }
     small{
         font-size: 10px;
+    }
+    #daily-msg{
+        padding-bottom: 1.5em;
     }
 }
 
