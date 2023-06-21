@@ -71,6 +71,7 @@ p{
     font-size: .7em;
     text-align: center;
     font-style: normal;
+    margin-top: 3em;
     padding-bottom: 5px;
 }
 
@@ -78,7 +79,7 @@ p{
 /* ------ Envelope -------  */
 
 #envelope {
-    margin-top: -2rem;
+    margin-top: -2.5rem;
     position: relative;
     width: 280px;
     height: 180px;
@@ -89,7 +90,7 @@ p{
     top: 150px;
     background-color: #00334c;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-
+    /* margin-bottom: 2em; */
 }
 .front{
     position: absolute;
