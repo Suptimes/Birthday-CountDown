@@ -254,10 +254,13 @@ p{
     h1{
         font-size: 3rem;
     }
+    h2{
+        font-size: 35px;
+    }
     .time{
-        transform: scale(.8) ;
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
+        transform: scale(.6) ;
+        margin-left: 0;
+        margin-right: 0;
     }
     small{
         font-size: 0.7rem;
