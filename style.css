@@ -69,7 +69,7 @@ p{
 /* ------ Envelope -------  */
 
 .envlope-wrapper{
-    padding-bottom: 8rem;
+    padding-bottom: 15rem;
 }
 
 #envelope {
@@ -194,7 +194,7 @@ p{
     top: 0;
     width: 50px;
     height: 80px;
-    background: #d00000;
+    background: rgba(188,100,255,1);
     border-radius: 50px 50px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
@@ -250,8 +250,53 @@ p{
     }
 }
 
+/* --------- Images Scroll --------- */
+.images{
+    width: 100vw;
+    height: 56svh;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.image-track{
+    overflow: hidden;
+    /* width: 100vw; */
+    height: 56svh;
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    /* top: 104%; */
+}
+.image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+}
+
+
+
 @media (max-width: 650px) {
     h1{
+        font-size: 3rem;
+    }
+    .time{
+        transform: scale(.8) ;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin: auto 0;
+    }
+    small{
+        font-size: 0.7rem;
+    }
+    .container {
+        margin-top: -8rem;
+    }
+    /* h1{
         font-size: 3rem;
     }
     h2{
@@ -264,5 +309,5 @@ p{
     }
     small{
         font-size: 0.7rem;
-    }
+    } */
 }
