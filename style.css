@@ -15,6 +15,7 @@ body{
     background: #000;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 h1{
@@ -276,7 +277,6 @@ p{
 }
 
 
-
 @media (max-width: 650px) {
     h1{
         font-size: 3rem;
@@ -296,18 +296,4 @@ p{
     .container {
         margin-top: -8rem;
     }
-    /* h1{
-        font-size: 3rem;
-    }
-    h2{
-        font-size: 35px;
-    }
-    .time{
-        transform: scale(.6) ;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    small{
-        font-size: 0.7rem;
-    } */
 }
