@@ -91,3 +91,41 @@ window.onmouseup = () => {
   track.dataset.prevPercentage = track.dataset.percentage
 }
 
+
+// Image Panorama with Touch on Mobile -------------------
+
+window.ontouchstart = e => {
+  track.dataset.touchStartX = e.touches[0].clientX;
+};
+
+window.ontouchmove = e => {
+  if (!track.dataset.touchStartX) return;
+
+  const touchDelta = parseFloat(track.dataset.touchStartX) - e.touches[0].clientX;
+  const maxDelta = window.innerWidth / 2;
+
+  const percentage = (touchDelta / maxDelta) * -100;
+  const nextPercentage = Math.max(-100, Math.min(0, parseFloat(track.dataset.prevPercentage) + percentage));
+
+  track.dataset.percentage = nextPercentage;
+  track.style.transform = `translate(${nextPercentage}%, 0%)`;
+
+  const images = track.getElementsByClassName("image");
+  for (const image of images) {
+    track.animate(
+      { transform: `translate(${nextPercentage}%, 0%)` },
+      { duration: 1200, fill: "forwards" }
+    );
+
+    image.animate(
+      { objectPosition: `${100 + nextPercentage}% center` },
+      { duration: 1200, fill: "forwards" }
+    );
+  }
+};
+
+window.ontouchend = () => {
+  track.dataset.touchStartX = null;
+  track.dataset.prevPercentage = track.dataset.percentage;
+};
+
