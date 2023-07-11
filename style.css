@@ -269,7 +269,7 @@ p{
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: center;
+    object-position: right;
     user-select: none;
 }
 
@@ -300,6 +300,6 @@ p{
         min-height: 500px;
     }
     .image{
-        min-width: 270px;
+        min-width: 400px;
     }
 }

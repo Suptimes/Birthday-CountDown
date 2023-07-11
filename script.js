@@ -75,7 +75,7 @@ window.onmousemove = e => {
 
   track.dataset.percentage = nextPercentage
 
-  track.style.transform = `translate(${nextPercentage}%, 0%)`
+  // track.style.transform = `translate(${nextPercentage}%, 0%)`
 
   for(const image of track.getElementsByClassName("image")){
     track.animate({
@@ -102,7 +102,7 @@ window.ontouchmove = e => {
   if (!track.dataset.touchStartX) return;
 
   const touchDelta = parseFloat(track.dataset.touchStartX) - e.touches[0].clientX;
-  const maxDelta = window.innerWidth / 2;
+  const maxDelta = window.innerWidth;
 
   const percentage = (touchDelta / maxDelta) * -100;
   const nextPercentage = Math.max(-100, Math.min(0, parseFloat(track.dataset.prevPercentage) + percentage));
