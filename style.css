@@ -55,9 +55,6 @@ p{
     font-style: italic;
 }
 
-.footer{
-    /* flex-grow: 1; */
-}
 #footer{
     font-size: .7em;
     text-align: center;
@@ -278,6 +275,9 @@ p{
 
 
 @media (max-width: 650px) {
+    body{
+        overflow-x: hidden;
+    }
     h1{
         font-size: 3rem;
     }
@@ -295,5 +295,11 @@ p{
     }
     .container {
         margin-top: -8rem;
+    }
+    .image, .images{
+        min-height: 500px;
+    }
+    .image{
+        min-width: 270px;
     }
 }
